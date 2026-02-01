@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EcoTech Shop - Votre destination pour des produits tech écoresponsables, durables et innovants">
+    <title>EcoTech Shop - Tech écoresponsable et durable</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Header et Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" alt="EcoTech Shop Logo" class="logo-img">
+                        <span class="logo-text">EcoTech<span class="logo-accent">Shop</span></span>
+                    </a>
+                </div>
+                
+                <div class="header-actions">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Rechercher un produit...">
+                        <button><i class="fas fa-search"></i></button>
+                    </div>
+                    
+                    <div class="user-actions">
+                        <a href="#" class="user-action" title="Mon compte">
+                            <i class="far fa-user"></i>
+                        </a>
+                        <a href="#" class="user-action" title="Favoris">
+                            <i class="far fa-heart"></i>
+                        </a>
+                        <a href="panier.html" class="user-action cart-icon" title="Panier">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li class="dropdown">
+                        <a href="produits.html">Produits <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="produits.html?category=chargeurs">Chargeurs Solaires</a>
+                            <a href="produits.html?category=audio">Audio Écoresponsable</a>
+                            <a href="produits.html?category=accessoires">Accessoires Recyclés</a>
+                            <a href="produits.html?category=maison">Maison Connectée Verte</a>
+                        </div>
+                    </li>
+                    <li><a href="blog.html">Blog Éco-Tech</a></li>
+                    <li><a href="a-propos.html">Notre Mission</a></li>
+                    <li><a href="impact.html">Notre Impact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-features">
+                    <span class="eco-badge">
+                        <i class="fas fa-leaf"></i> Livraison Carboneutre
+                    </span>
+                    <span class="eco-badge">
+                        <i class="fas fa-recycle"></i> Emballages 100% Recyclés
+                    </span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Tech Innovante. Planète Respectée.</h1>
+                <p class="hero-subtitle">Découvrez des produits tech conçus avec des matériaux durables, rechargeables à l'énergie solaire et respectueux de notre environnement.</p>
+                <div class="hero-actions">
+                    <a href="produits.html" class="btn btn-primary">Découvrir nos produits</a>
+                    <a href="a-propos.html" class="btn btn-secondary">Notre mission <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">2,548</span>
+                        <span class="stat-label">kg de CO2 économisés</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1,237</span>
+                        <span class="stat-label">clients satisfaits</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">emballages recyclés</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero-product.png" alt="Produits tech écoresponsables" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Catégories -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Explorez nos catégories</h2>
+            <p class="section-subtitle">Des produits pensés pour réduire votre impact écologique</p>
+            
+            <div class="categories-grid">
+                <a href="produits.html?category=chargeurs" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Chargeurs Solaires</h3>
+                    <p>Autonomie énergétique grâce au soleil</p>
+                    <span class="category-link">Voir les produits <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="produits.html?category=audio" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Audio Écoresponsable</h3>
+                    <p>Écouteurs et enceintes en matériaux recyclés</p>
+                    <span class="category-link">Voir les produits <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="produits.html?category=accessoires" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Accessoires Recyclés</h3>
+                    <p>Coques et accessoires en matériaux durables</p>
+                    <span class="category-link">Voir les produits <i class="fas fa-arrow-right"></i></span>
+                </a>
+                
+                <a href="produits.html?category=maison" class="category-card">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Maison Connectée Verte</h3>
+                    <p>Objets connectés à faible consommation</p>
+                    <span class="category-link">Voir les produits <i class="fas fa-arrow-right"></i></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produits phares -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nos produits phares</h2>
+                <a href="produits.html" class="view-all">Voir tout <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="products-grid" id="featured-products">
+                <!-- Les produits seront chargés dynamiquement par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Valeurs -->
+    <section class="values">
+        <div class="container">
+            <h2 class="section-title">Nos engagements écologiques</h2>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>Matériaux Durables</h3>
+                    <p>Nous sélectionnons uniquement des matériaux recyclés, biodégradables ou d'origine responsable.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-battery-full"></i>
+                    </div>
+                    <h3>Énergie Propre</h3>
+                    <p>Tous nos produits sont optimisés pour une faible consommation ou fonctionnent à l'énergie solaire.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Livraison Carboneutre</h3>
+                    <p>Nous compensons 100% des émissions de CO2 de nos livraisons par des projets de reforestation.</p>
+                </div>
+                
+                <div class="value-card">
+                    <div class="value-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h3>Circuit de Recyclage</h3>
+                    <p>Reprenez vos anciens appareils pour recyclage et bénéficiez d'une réduction sur votre prochain achat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Restez informés</h2>
+                <p>Recevez nos conseils éco-tech, offres exclusives et nouveautés directement dans votre boîte mail.</p>
+                
+                <form class="newsletter-form" id="newsletter-form">
+                    <input type="email" placeholder="Votre adresse email" required>
+                    <button type="submit" class="btn btn-primary">S'inscrire</button>
+                </form>
+                
+                <p class="newsletter-note">
+                    <i class="fas fa-lock"></i> Nous respectons votre vie privée. Désabonnez-vous à tout moment.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="assets/images/logo-white.svg" alt="EcoTech Shop">
+                        <span>EcoTech<span>Shop</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Nous proposons des produits tech innovants conçus avec des matériaux durables pour réduire notre impact environnemental.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Boutique</h3>
+                    <ul>
+                        <li><a href="produits.html?category=chargeurs">Chargeurs Solaires</a></li>
+                        <li><a href="produits.html?category=audio">Audio Écoresponsable</a></li>
+                        <li><a href="produits.html?category=accessoires">Accessoires Recyclés</a></li>
+                        <li><a href="produits.html?category=maison">Maison Connectée Verte</a></li>
+                        <li><a href="produits.html">Tous les produits</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Entreprise</h3>
+                    <ul>
+                        <li><a href="a-propos.html">Notre Mission</a></li>
+                        <li><a href="impact.html">Notre Impact</a></li>
+                        <li><a href="blog.html">Blog Éco-Tech</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Carrières</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Assistance</h3>
+                    <ul>
+                        <li><a href="contact.html">Centre d'aide</a></li>
+                        <li><a href="#">Livraison & Retours</a></li>
+                        <li><a href="cgu.html">CGU & CGV</a></li>
+                        <li><a href="politique-confidentialite.html">Confidentialité</a></li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 12 Rue de l'Éco-Tech, 75015 Paris</li>
+                        <li><i class="fas fa-phone"></i> 01 23 45 67 89</li>
+                        <li><i class="fas fa-envelope"></i> contact@ecotechshop.fr</li>
+                    </ul>
+                    
+                    <div class="payment-methods">
+                        <i class="fab fa-cc-visa" title="Visa"></i>
+                        <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                        <i class="fab fa-cc-paypal" title="PayPal"></i>
+                        <i class="fab fa-cc-apple-pay" title="Apple Pay"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 EcoTech Shop. Tous droits réservés.</p>
+                <p>Site conçu avec <i class="fas fa-heart"></i> pour la planète</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

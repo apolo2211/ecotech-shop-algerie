@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue - EcoTech Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+</head>
+<body>
+    <!-- Même header que index.html -->
+    <header class="main-header">
+        <!-- Insérer ici le même header que index.html -->
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container">
+            <nav aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><span aria-current="page">Produits</span></li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Catalogue -->
+    <section class="catalogue">
+        <div class="container">
+            <div class="catalogue-header">
+                <h1>Notre catalogue écoresponsable</h1>
+                <p>Découvrez nos produits tech conçus pour durer et respecter la planète</p>
+            </div>
+            
+            <div class="catalogue-content">
+                <!-- Filtres -->
+                <aside class="filters">
+                    <div class="filter-group">
+                        <h3>Catégories</h3>
+                        <ul class="filter-list">
+                            <li><a href="#" class="filter-link active" data-category="all">Tous les produits</a></li>
+                            <li><a href="#" class="filter-link" data-category="chargeurs">Chargeurs Solaires</a></li>
+                            <li><a href="#" class="filter-link" data-category="audio">Audio Écoresponsable</a></li>
+                            <li><a href="#" class="filter-link" data-category="accessoires">Accessoires Recyclés</a></li>
+                            <li><a href="#" class="filter-link" data-category="maison">Maison Connectée Verte</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Prix</h3>
+                        <div class="price-range">
+                            <input type="range" min="0" max="200" value="200" class="price-slider" id="priceRange">
+                            <div class="price-values">
+                                <span>0€</span>
+                                <span id="maxPrice">200€</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <h3>Éco-labels</h3>
+                        <div class="eco-labels">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="eco-label" value="recycled">
+                                <span>Matériaux recyclés</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="eco-label" value="biodegradable">
+                                <span>Biodégradable</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="eco-label" value="solar">
+                                <span>Énergie solaire</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="eco-label" value="reparable">
+                                <span>Réparable</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-secondary" id="resetFilters">
+                        <i class="fas fa-redo"></i> Réinitialiser
+                    </button>
+                </aside>
+                
+                <!-- Produits -->
+                <main class="products-list">
+                    <div class="products-header">
+                        <div class="products-count">
+                            <span id="productsCount">0</span> produits trouvés
+                        </div>
+                        <div class="sort-by">
+                            <label for="sort">Trier par :</label>
+                            <select id="sort">
+                                <option value="default">Par défaut</option>
+                                <option value="price-asc">Prix croissant</option>
+                                <option value="price-desc">Prix décroissant</option>
+                                <option value="name">Nom A-Z</option>
+                                <option value="newest">Plus récents</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="products-grid" id="productsGrid">
+                        <!-- Les produits seront chargés dynamiquement -->
+                    </div>
+                    
+                    <div class="pagination">
+                        <button class="pagination-btn" disabled>
+                            <i class="fas fa-chevron-left"></i> Précédent
+                        </button>
+                        <span class="pagination-pages">Page 1 sur 1</span>
+                        <button class="pagination-btn">
+                            Suivant <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!-- Même footer que index.html -->
+    <footer class="main-footer">
+        <!-- Insérer ici le même footer que index.html -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/catalogue.js"></script>
+</body>
+</html>

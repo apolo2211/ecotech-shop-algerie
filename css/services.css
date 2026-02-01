@@ -1,0 +1,519 @@
+/* Styles spécifiques à la page services */
+
+:root {
+    --primary-color: #2E8B57;
+    --secondary-color: #20B2AA;
+    --accent-color: #FF7F50;
+    --dark-color: #2F4F4F;
+}
+
+/* Hero Services */
+.services-hero {
+    padding: 100px 0 80px;
+    background: linear-gradient(135deg, var(--dark-color) 0%, #1a3a3a 100%);
+    color: white;
+    overflow: hidden;
+}
+
+.services-hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.services-hero .hero-content {
+    flex: 1;
+}
+
+.services-hero .hero-title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.services-hero .hero-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    max-width: 600px;
+}
+
+.services-hero .hero-actions {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.services-hero .hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.services-hero .hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.services-hero .hero-img {
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Our Services */
+.our-services {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 35px 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    border-color: var(--primary-color);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.service-icon {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.service-description {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.service-features {
+    list-style: none;
+    margin: 25px 0;
+    padding: 0;
+}
+
+.service-features li {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.service-features i {
+    color: var(--primary-color);
+}
+
+.service-price {
+    margin: 25px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.service-price .price {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+
+.btn-outline {
+    display: inline-block;
+    padding: 12px 30px;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-outline:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.pricing-card {
+    background: white;
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border: 1px solid #e9ecef;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+}
+
+.pricing-card.popular:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    color: white;
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pricing-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-header h3 {
+    font-size: 24px;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.pricing-header .price {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin: 15px 0;
+}
+
+.pricing-header .price small {
+    font-size: 18px;
+    color: #666;
+}
+
+.pricing-features {
+    list-style: none;
+    margin: 30px 0;
+    padding: 0;
+}
+
+.pricing-features li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pricing-features i {
+    color: var(--primary-color);
+}
+
+/* Portfolio */
+.portfolio-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-info {
+    padding: 20px;
+}
+
+.portfolio-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: var(--dark-color);
+}
+
+.portfolio-info p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.portfolio-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #e9f7ef;
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Process */
+.process-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.process-step {
+    text-align: center;
+    position: relative;
+}
+
+.process-step:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -30px;
+    top: 40px;
+    font-size: 30px;
+    color: #ddd;
+}
+
+.step-number {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.process-step h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+}
+
+/* CTA Final */
+.cta-final {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--dark-color) 0%, #1a3a3a 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-buttons {
+    margin-bottom: 40px;
+}
+
+.btn-large {
+    padding: 16px 40px;
+    font-size: 18px;
+}
+
+.contact-direct {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-3px);
+}
+
+.cta-features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.feature i {
+    color: var(--accent-color);
+    font-size: 24px;
+}
+
+/* Footer spécifique services */
+.payment-badges {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.payment-badges .badge {
+    padding: 5px 12px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .services-hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .services-hero .hero-stats {
+        justify-content: center;
+    }
+    
+    .process-step:not(:last-child)::after {
+        display: none;
+    }
+    
+    .pricing-card.popular {
+        transform: none;
+    }
+    
+    .pricing-card.popular:hover {
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .services-hero .hero-title {
+        font-size: 36px;
+    }
+    
+    .services-hero .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .contact-direct {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-features {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .services-hero {
+        padding: 60px 0;
+    }
+    
+    .services-hero .hero-title {
+        font-size: 30px;
+    }
+    
+    .services-hero .hero-actions {
+        flex-direction: column;
+    }
+    
+    .cta-content h2 {
+        font-size: 32px;
+    }
+}

@@ -3,120 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="EcoTech Solutions - Création de sites web, applications mobiles, e-commerce et solutions de paiement électronique en Algérie et international">
-    <title>Services - Création Sites Web & Applications | EcoTech Solutions Algérie</title>
+    <title>Services Digitaux - EcoTech Solutions Algérie</title>
+    <meta name="description" content="Création de sites web, applications mobiles, e-commerce et solutions de paiement pour entreprises en Algérie">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Trust Notification -->
+    <div class="trust-notification">
+        <div class="container">
+            <i class="fas fa-shield-alt"></i>
+            <span><strong>DÉVELOPPEMENT SUR MESURE</strong> - Sites web professionnels - Applications mobiles - Hébergement Algérie - Support 24/7</span>
+            <button class="close-notification">×</button>
+        </div>
+    </div>
+
+    <!-- Header (identique à index.html) -->
     <header class="main-header">
         <div class="container">
             <div class="header-top">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/images/logo.svg" alt="EcoTech Solutions Logo" class="logo-img">
-                        <span class="logo-text">EcoTech<span class="logo-accent">Solutions</span></span>
+                        <div class="logo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">EcoTech</span>
+                            <span class="logo-sub">Solutions</span>
+                        </div>
                     </a>
                 </div>
                 
-                <div class="header-actions">
-                    <div class="search-bar">
-                        <input type="text" placeholder="Rechercher...">
-                        <button><i class="fas fa-search"></i></button>
+                <div class="header-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <span>Devis Gratuit</span>
+                            <strong>+213 675 13 72 84</strong>
+                        </div>
                     </div>
-                    
-                    <div class="user-actions">
-                        <a href="contact.html" class="user-action" title="Contact">
-                            <i class="far fa-envelope"></i>
-                        </a>
-                        <a href="tel:+213675137284" class="user-action" title="Appeler">
-                            <i class="fas fa-phone"></i>
-                        </a>
-                        <a href="https://wa.me/213675137284" class="user-action whatsapp-btn" title="WhatsApp" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <span>Livraison</span>
+                            <strong>15-30 jours</strong>
+                        </div>
                     </div>
                 </div>
                 
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <div class="header-actions">
+                    <div class="user-actions">
+                        <a href="contact.html" class="action-btn" title="Devis">
+                            <i class="fas fa-file-alt"></i>
+                            <span class="action-label">Devis</span>
+                        </a>
+                        <a href="tel:+213675137284" class="action-btn" title="Appeler">
+                            <i class="fas fa-phone"></i>
+                            <span class="action-label">Appel</span>
+                        </a>
+                        <a href="https://wa.me/213675137284" class="action-btn whatsapp-btn" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="action-label">WhatsApp</span>
+                        </a>
+                    </div>
+                    
+                    <button class="mobile-menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
             </div>
             
             <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html">Accueil Boutique</a></li>
-                    <li><a href="services.html" class="active">Services Digitaux</a></li>
-                    <li class="dropdown">
-                        <a href="#">Solutions <i class="fas fa-chevron-down"></i></a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Accueil Boutique</a></li>
+                    <li><a href="services.html" class="nav-link active"><i class="fas fa-laptop-code"></i> Services Digitaux</a></li>
+                    <li class="nav-dropdown">
+                        <a href="#" class="nav-link"><i class="fas fa-cogs"></i> Solutions <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-menu">
-                            <a href="#sites-web">Sites Web</a>
-                            <a href="#applications">Applications</a>
-                            <a href="#ecommerce">E-commerce</a>
-                            <a href="#paiements">Paiements</a>
+                            <a href="#sites-web"><i class="fas fa-globe"></i> Sites Web</a>
+                            <a href="#applications"><i class="fas fa-mobile-alt"></i> Applications</a>
+                            <a href="#ecommerce"><i class="fas fa-shopping-cart"></i> E-commerce</a>
+                            <a href="#paiements"><i class="fas fa-credit-card"></i> Paiements</a>
                         </div>
                     </li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#tarifs">Tarifs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#portfolio" class="nav-link"><i class="fas fa-images"></i> Portfolio</a></li>
+                    <li><a href="#tarifs" class="nav-link"><i class="fas fa-tags"></i> Tarifs</a></li>
+                    <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
                 
-                <div class="nav-features">
-                    <span class="eco-badge">
-                        <i class="fas fa-code"></i> Développement sur mesure
-                    </span>
-                    <span class="eco-badge">
-                        <i class="fas fa-globe-africa"></i> Services Algérie & International
-                    </span>
+                <div class="nav-trust">
+                    <div class="trust-badge">
+                        <i class="fas fa-code-branch"></i>
+                        <span>Développement sur mesure</span>
+                    </div>
+                    <div class="trust-badge">
+                        <i class="fas fa-headset"></i>
+                        <span>Support technique</span>
+                    </div>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section Services -->
+    <!-- Hero Services -->
     <section class="services-hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Solutions Digitales Complètes</h1>
-                <p class="hero-subtitle">Création de sites web, applications mobiles, e-commerce et solutions de paiement électronique pour l'Algérie et le monde entier</p>
-                <div class="hero-actions">
-                    <a href="contact.html" class="btn btn-primary">Demander un devis gratuit</a>
-                    <a href="tel:+213675137284" class="btn btn-secondary">
-                        <i class="fas fa-phone"></i> +213 675 13 72 84
-                    </a>
-                </div>
+                <h1>Solutions Digitales Complètes pour l'Algérie</h1>
+                <p>Création de sites web professionnels, applications mobiles, boutiques e-commerce et solutions de paiement électronique adaptées au marché algérien.</p>
                 <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">50+</span>
-                        <span class="stat-label">projets réalisés</span>
+                        <span class="stat-label">Projets livrés</span>
                     </div>
                     <div class="stat">
                         <span class="stat-number">100%</span>
-                        <span class="stat-label">satisfaction client</span>
+                        <span class="stat-label">Satisfaction client</span>
                     </div>
                     <div class="stat">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">support technique</span>
+                        <span class="stat-number">30j</span>
+                        <span class="stat-label">Garantie incluse</span>
                     </div>
                 </div>
-            </div>
-            <div class="hero-image">
-                <img src="assets/images/services-hero.svg" alt="Services digitaux" class="hero-img">
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Demander un devis gratuit
+                    </a>
+                    <a href="tel:+213675137284" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> Appeler pour consultation
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Nos Services -->
-    <section class="our-services" id="solutions">
+    <section class="services-section" id="solutions">
         <div class="container">
-            <h2 class="section-title">Nos Services Digitaux</h2>
-            <p class="section-subtitle">Des solutions complètes pour votre transformation numérique</p>
+            <h2 class="section-title">Nos Services de Développement</h2>
+            <p class="section-subtitle">Des solutions digitales sur mesure pour transformer votre business</p>
             
             <div class="services-grid">
                 <div class="service-card" id="sites-web">
@@ -124,18 +155,34 @@
                         <i class="fas fa-laptop-code"></i>
                     </div>
                     <h3>Création de Sites Web</h3>
-                    <p class="service-description">Sites vitrines, institutionnels, blogs et plateformes sur mesure avec technologies modernes.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Sites WordPress personnalisés</li>
-                        <li><i class="fas fa-check-circle"></i> Sites statiques HTML/CSS/JS</li>
-                        <li><i class="fas fa-check-circle"></i> Sites dynamiques PHP/Python</li>
-                        <li><i class="fas fa-check-circle"></i> Référencement SEO avancé</li>
-                        <li><i class="fas fa-check-circle"></i> Hébergement & maintenance</li>
-                    </ul>
-                    <div class="service-price">
-                        À partir de <span class="price">15.000 DA</span>
+                    <p class="service-description">Sites vitrines, institutionnels, blogs et plateformes web sur mesure avec les dernières technologies.</p>
+                    <div class="service-features">
+                        <h4>Ce que nous faisons :</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Sites WordPress personnalisés</li>
+                            <li><i class="fas fa-check"></i> Sites statiques HTML5/CSS3/JS</li>
+                            <li><i class="fas fa-check"></i> Sites dynamiques PHP/MySQL</li>
+                            <li><i class="fas fa-check"></i> Référencement SEO avancé</li>
+                            <li><i class="fas fa-check"></i> Hébergement & maintenance</li>
+                        </ul>
                     </div>
-                    <a href="contact.html?service=sites-web" class="btn btn-outline">Commander ce service</a>
+                    <div class="service-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Délai : 10-20 jours</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Technologies : HTML, CSS, JS, PHP</span>
+                        </div>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-label">À partir de</span>
+                        <span class="price">25.000 DA</span>
+                    </div>
+                    <a href="contact.html?service=sites-web" class="btn btn-primary btn-full">
+                        <i class="fas fa-file-alt"></i> Demander un devis
+                    </a>
                 </div>
                 
                 <div class="service-card" id="applications">
@@ -143,161 +190,104 @@
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <h3>Applications Mobiles</h3>
-                    <p class="service-description">Applications natives et hybrides pour iOS et Android, adaptées à vos besoins spécifiques.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Applications iOS (Swift)</li>
-                        <li><i class="fas fa-check-circle"></i> Applications Android (Kotlin)</li>
-                        <li><i class="fas fa-check-circle"></i> Applications hybrides React Native</li>
-                        <li><i class="fas fa-check-circle"></i> Applications Flutter</li>
-                        <li><i class="fas fa-check-circle"></i> Applications PWA (Progressive Web Apps)</li>
-                    </ul>
-                    <div class="service-price">
-                        À partir de <span class="price">75.000 DA</span>
+                    <p class="service-description">Applications natives et hybrides pour iOS et Android, optimisées pour le marché algérien.</p>
+                    <div class="service-features">
+                        <h4>Ce que nous faisons :</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Applications iOS (Swift)</li>
+                            <li><i class="fas fa-check"></i> Applications Android (Kotlin)</li>
+                            <li><i class="fas fa-check"></i> Applications React Native</li>
+                            <li><i class="fas fa-check"></i> Applications Flutter</li>
+                            <li><i class="fas fa-check"></i> PWA (Progressive Web Apps)</li>
+                        </ul>
                     </div>
-                    <a href="contact.html?service=applications" class="btn btn-outline">Développer mon app</a>
+                    <div class="service-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Délai : 30-60 jours</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Technologies : React, Flutter, Swift</span>
+                        </div>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-label">À partir de</span>
+                        <span class="price">75.000 DA</span>
+                    </div>
+                    <a href="contact.html?service=applications" class="btn btn-primary btn-full">
+                        <i class="fas fa-file-alt"></i> Développer mon app
+                    </a>
                 </div>
                 
                 <div class="service-card" id="ecommerce">
                     <div class="service-icon">
                         <i class="fas fa-shopping-cart"></i>
                     </div>
-                    <h3>Solutions E-commerce</h3>
-                    <p class="service-description">Boutiques en ligne complètes avec gestion des stocks, commandes et paiements sécurisés.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Boutiques Shopify/WooCommerce</li>
-                        <li><i class="fas fa-check-circle"></i> Solutions Magento/PrestaShop</li>
-                        <li><i class="fas fa-check-circle"></i> Marketplaces multi-vendeurs</li>
-                        <li><i class="fas fa-check-circle"></i> Paiements en ligne sécurisés</li>
-                        <li><i class="fas fa-check-circle"></i> Gestion logistique intégrée</li>
-                    </ul>
-                    <div class="service-price">
-                        À partir de <span class="price">35.000 DA</span>
+                    <h3>Boutiques E-commerce</h3>
+                    <p class="service-description">Solutions e-commerce complètes avec gestion des stocks, commandes et paiements sécurisés.</p>
+                    <div class="service-features">
+                        <h4>Ce que nous faisons :</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Boutiques Shopify/WooCommerce</li>
+                            <li><i class="fas fa-check"></i> Solutions Magento/PrestaShop</li>
+                            <li><i class="fas fa-check"></i> Marketplaces multi-vendeurs</li>
+                            <li><i class="fas fa-check"></i> Paiements en ligne sécurisés</li>
+                            <li><i class="fas fa-check"></i> Gestion logistique intégrée</li>
+                        </ul>
                     </div>
-                    <a href="contact.html?service=ecommerce" class="btn btn-outline">Créer ma boutique</a>
+                    <div class="service-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Délai : 15-30 jours</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Technologies : PHP, MySQL, JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="service-price">
+                        <span class="price-label">À partir de</span>
+                        <span class="price">35.000 DA</span>
+                    </div>
+                    <a href="contact.html?service=ecommerce" class="btn btn-primary btn-full">
+                        <i class="fas fa-file-alt"></i> Créer ma boutique
+                    </a>
                 </div>
                 
                 <div class="service-card" id="paiements">
                     <div class="service-icon">
                         <i class="fas fa-credit-card"></i>
                     </div>
-                    <h3>Paiements Électroniques</h3>
-                    <p class="service-description">Solutions de paiement adaptées au marché algérien et international avec intégration complète.</p>
-                    <ul class="service-features">
-                        <li><i class="fas fa-check-circle"></i> Portefeuilles électroniques</li>
-                        <li><i class="fas fa-check-circle"></i> Paiements mobiles (Djezzy, Ooredoo)</li>
-                        <li><i class="fas fa-check-circle"></i> Cartes Edahabia/CIB</li>
-                        <li><i class="fas fa-check-circle"></i> Solutions crypto-monnaies</li>
-                        <li><i class="fas fa-check-circle"></i> Systèmes de facturation</li>
-                    </ul>
+                    <h3>Solutions de Paiement</h3>
+                    <p class="service-description">Intégration de systèmes de paiement adaptés au marché algérien et international.</p>
+                    <div class="service-features">
+                        <h4>Ce que nous faisons :</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Portefeuilles électroniques</li>
+                            <li><i class="fas fa-check"></i> Paiements mobiles (Djezzy/Ooredoo)</li>
+                            <li><i class="fas fa-check"></i> Cartes Edahabia/CIB</li>
+                            <li><i class="fas fa-check"></i> Solutions crypto-monnaies</li>
+                            <li><i class="fas fa-check"></i> Systèmes de facturation</li>
+                        </ul>
+                    </div>
+                    <div class="service-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Délai : 7-14 jours</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Technologies : API, PHP, JavaScript</span>
+                        </div>
+                    </div>
                     <div class="service-price">
-                        À partir de <span class="price">25.000 DA</span>
+                        <span class="price-label">À partir de</span>
+                        <span class="price">20.000 DA</span>
                     </div>
-                    <a href="contact.html?service=paiements" class="btn btn-outline">Intégrer les paiements</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section Tarifs -->
-    <section class="pricing-section" id="tarifs">
-        <div class="container">
-            <h2 class="section-title">Nos Forfaits Populaires</h2>
-            <p class="section-subtitle">Des solutions adaptées à tous les budgets</p>
-            
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Site Vitrine Basique</h3>
-                        <div class="price">15.000 <small>DA</small></div>
-                        <p>Parfait pour débuter en ligne</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 5 pages maximum</li>
-                        <li><i class="fas fa-check"></i> Design responsive</li>
-                        <li><i class="fas fa-check"></i> Formulaire de contact</li>
-                        <li><i class="fas fa-check"></i> Hébergement 1 an</li>
-                        <li><i class="fas fa-check"></i> Support 3 mois</li>
-                    </ul>
-                    <a href="contact.html?package=basique" class="btn btn-primary">Choisir ce forfait</a>
-                </div>
-                
-                <div class="pricing-card popular">
-                    <div class="popular-badge">LE PLUS POPULAIRE</div>
-                    <div class="pricing-header">
-                        <h3>Site E-commerce</h3>
-                        <div class="price">35.000 <small>DA</small></div>
-                        <p>Solution complète pour vendre en ligne</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Catalogue produits illimité</li>
-                        <li><i class="fas fa-check"></i> Panier & commandes</li>
-                        <li><i class="fas fa-check"></i> Paiements Algérie (CIB, Edahabia)</li>
-                        <li><i class="fas fa-check"></i> Backend administrateur</li>
-                        <li><i class="fas fa-check"></i> Support 6 mois</li>
-                    </ul>
-                    <a href="contact.html?package=ecommerce" class="btn btn-primary">Choisir ce forfait</a>
-                </div>
-                
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Application Mobile</h3>
-                        <div class="price">75.000 <small>DA</small></div>
-                        <p>Présence sur iOS & Android</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> iOS et Android</li>
-                        <li><i class="fas fa-check"></i> Design UX/UI personnalisé</li>
-                        <li><i class="fas fa-check"></i> Publication sur stores</li>
-                        <li><i class="fas fa-check"></i> Maintenance 1 an</li>
-                        <li><i class="fas fa-check"></i> Mises à jour gratuites</li>
-                    </ul>
-                    <a href="contact.html?package=mobile" class="btn btn-primary">Choisir ce forfait</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section class="portfolio-section" id="portfolio">
-        <div class="container">
-            <h2 class="section-title">Nos Réalisations</h2>
-            <p class="section-subtitle">Découvrez quelques-uns de nos projets</p>
-            
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="assets/images/portfolio/ecommerce-algerie.jpg" alt="Site e-commerce Algérie">
-                    <div class="portfolio-info">
-                        <h4>Boutique en ligne Mode</h4>
-                        <p>Alger - 2023</p>
-                        <span class="portfolio-tag">E-commerce</span>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <img src="assets/images/portfolio/app-livraison.jpg" alt="Application livraison">
-                    <div class="portfolio-info">
-                        <h4>App Livraison Express</h4>
-                        <p>Oran - 2023</p>
-                        <span class="portfolio-tag">Mobile</span>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <img src="assets/images/portfolio/site-corporate.jpg" alt="Site corporate">
-                    <div class="portfolio-info">
-                        <h4>Site Institutionnel</h4>
-                        <p>Constantine - 2023</p>
-                        <span class="portfolio-tag">Corporate</span>
-                    </div>
-                </div>
-                
-                <div class="portfolio-item">
-                    <img src="assets/images/portfolio/plateforme-education.jpg" alt="Plateforme éducation">
-                    <div class="portfolio-info">
-                        <h4>Plateforme Éducative</h4>
-                        <p>Alger - 2024</p>
-                        <span class="portfolio-tag">Web App</span>
-                    </div>
+                    <a href="contact.html?service=paiements" class="btn btn-primary btn-full">
+                        <i class="fas fa-file-alt"></i> Intégrer les paiements
+                    </a>
                 </div>
             </div>
         </div>
@@ -307,150 +297,350 @@
     <section class="process-section">
         <div class="container">
             <h2 class="section-title">Notre Processus de Travail</h2>
+            <p class="section-subtitle">Une méthodologie éprouvée pour garantir votre succès</p>
             
-            <div class="process-steps">
+            <div class="process-timeline">
                 <div class="process-step">
                     <div class="step-number">1</div>
-                    <h3>Consultation</h3>
-                    <p>Analyse de vos besoins et définition des spécifications</p>
+                    <div class="step-content">
+                        <h3>Consultation & Analyse</h3>
+                        <p>Nous étudions vos besoins, votre marché et définissons les spécifications techniques.</p>
+                    </div>
                 </div>
-                
                 <div class="process-step">
                     <div class="step-number">2</div>
-                    <h3>Conception</h3>
-                    <p>Design UX/UI et validation des maquettes</p>
+                    <div class="step-content">
+                        <h3>Conception & Design</h3>
+                        <p>Création des maquettes, validation des designs et expérience utilisateur.</p>
+                    </div>
                 </div>
-                
                 <div class="process-step">
                     <div class="step-number">3</div>
-                    <h3>Développement</h3>
-                    <p>Codage, tests et intégration des fonctionnalités</p>
+                    <div class="step-content">
+                        <h3>Développement</h3>
+                        <p>Codage, intégration des fonctionnalités et tests qualité.</p>
+                    </div>
                 </div>
-                
                 <div class="process-step">
                     <div class="step-number">4</div>
-                    <h3>Livraison</h3>
-                    <p>Déploiement, formation et support continu</p>
+                    <div class="step-content">
+                        <h3>Livraison & Formation</h3>
+                        <p>Déploiement, formation utilisateur et support technique.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Final -->
-    <section class="cta-final">
+    <!-- Tarifs -->
+    <section class="pricing-section" id="tarifs">
+        <div class="container">
+            <h2 class="section-title">Nos Forfaits Populaires</h2>
+            <p class="section-subtitle">Des solutions adaptées à tous les budgets et besoins</p>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Site Vitrine</h3>
+                        <div class="price">25.000 <small>DA</small></div>
+                        <p>Parfait pour présenter votre entreprise</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 5 pages maximum</li>
+                        <li><i class="fas fa-check"></i> Design responsive</li>
+                        <li><i class="fas fa-check"></i> Formulaire de contact</li>
+                        <li><i class="fas fa-check"></i> Hébergement 1 an</li>
+                        <li><i class="fas fa-check"></i> Support 3 mois</li>
+                    </ul>
+                    <a href="contact.html?package=vitrine" class="btn btn-primary btn-full">Choisir ce forfait</a>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">LE PLUS CHOISI</div>
+                    <div class="pricing-header">
+                        <h3>Site E-commerce</h3>
+                        <div class="price">45.000 <small>DA</small></div>
+                        <p>Solution complète pour vendre en ligne</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Catalogue produits illimité</li>
+                        <li><i class="fas fa-check"></i> Panier & commandes</li>
+                        <li><i class="fas fa-check"></i> Paiements Algérie (CIB, Edahabia)</li>
+                        <li><i class="fas fa-check"></i> Backend administrateur</li>
+                        <li><i class="fas fa-check"></i> Support 6 mois</li>
+                    </ul>
+                    <a href="contact.html?package=ecommerce" class="btn btn-primary btn-full">Choisir ce forfait</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Application Mobile</h3>
+                        <div class="price">85.000 <small>DA</small></div>
+                        <p>Présence sur iOS & Android</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> iOS et Android</li>
+                        <li><i class="fas fa-check"></i> Design UX/UI personnalisé</li>
+                        <li><i class="fas fa-check"></i> Publication sur stores</li>
+                        <li><i class="fas fa-check"></i> Maintenance 1 an</li>
+                        <li><i class="fas fa-check"></i> Mises à jour gratuites</li>
+                    </ul>
+                    <a href="contact.html?package=mobile" class="btn btn-primary btn-full">Choisir ce forfait</a>
+                </div>
+            </div>
+            
+            <div class="pricing-note">
+                <p><i class="fas fa-info-circle"></i> Tous nos forfaits incluent : hébergement en Algérie, nom de domaine .dz, certificat SSL et formation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">Nos Réalisations</h2>
+            <p class="section-subtitle">Découvrez quelques-uns de nos projets récents</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio/ecommerce-algerie.jpg" alt="Site e-commerce Algérie">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Boutique Mode Algérie</h4>
+                        <p>Site e-commerce complet avec paiements locaux et gestion des stocks.</p>
+                        <div class="portfolio-tags">
+                            <span>E-commerce</span>
+                            <span>Algérie</span>
+                            <span>WooCommerce</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio/app-livraison.jpg" alt="Application livraison">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>App Livraison Express</h4>
+                        <p>Application mobile de livraison avec suivi en temps réel.</p>
+                        <div class="portfolio-tags">
+                            <span>Mobile</span>
+                            <span>React Native</span>
+                            <span>GPS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="assets/images/portfolio/site-corporate.jpg" alt="Site corporate">
+                        <div class="portfolio-overlay">
+                            <a href="#" class="btn btn-primary">Voir le projet</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>Site Institutionnel</h4>
+                        <p>Site corporate avec gestion multilingue et espace membre.</p>
+                        <div class="portfolio-tags">
+                            <span>Corporate</span>
+                            <span>WordPress</span>
+                            <span>Multilingue</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Prêt à Digitaliser Votre Business ?</h2>
-                <p>Contactez-nous pour un devis gratuit et personnalisé en moins de 24h</p>
+                <h2>Prêt à Transformer Votre Idée en Réalité ?</h2>
+                <p>Contactez-nous pour un devis gratuit et personnalisé. Réponse sous 24h.</p>
                 
                 <div class="cta-buttons">
                     <a href="contact.html" class="btn btn-primary btn-large">
                         <i class="fas fa-paper-plane"></i> Demander un devis
                     </a>
-                    
-                    <div class="contact-direct">
-                        <a href="tel:+213675137284" class="contact-link">
-                            <i class="fas fa-phone"></i> +213 675 13 72 84
-                        </a>
-                        <a href="https://wa.me/213675137284" class="contact-link" target="_blank">
-                            <i class="fab fa-whatsapp"></i> WhatsApp
-                        </a>
-                        <a href="mailto:apolo2211@gmail.com" class="contact-link">
-                            <i class="fas fa-envelope"></i> apolo2211@gmail.com
-                        </a>
-                    </div>
+                    <a href="tel:+213675137284" class="btn btn-secondary btn-large">
+                        <i class="fas fa-phone"></i> +213 675 13 72 84
+                    </a>
                 </div>
                 
                 <div class="cta-features">
                     <div class="feature">
-                        <i class="fas fa-bolt"></i>
-                        <span>Délais garantis</span>
+                        <i class="fas fa-check-circle"></i>
+                        <span>Devis gratuit</span>
                     </div>
                     <div class="feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Support 24/7</span>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-money-bill-wave"></i>
+                        <i class="fas fa-check-circle"></i>
                         <span>Paiement échelonné</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Garantie 30 jours</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer (identique à index.html avec ajustements) -->
     <footer class="main-footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col">
+            <div class="footer-top">
+                <div class="footer-brand">
                     <div class="footer-logo">
-                        <img src="assets/images/logo-white.svg" alt="EcoTech Solutions">
-                        <span>EcoTech<span>Solutions</span></span>
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <span class="logo-main">EcoTech</span>
+                            <span class="logo-sub">Solutions</span>
+                        </div>
                     </div>
                     <p class="footer-description">
-                        Solutions digitales complètes pour les entreprises en Algérie et à l'international. 
-                        Création de sites web, applications mobiles, e-commerce et systèmes de paiement.
+                        Agence de développement web et mobile en Algérie. 
+                        Création de solutions digitales sur mesure pour votre réussite.
                     </p>
-                    <div class="social-links">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://github.com/" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://wa.me/213675137284" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/213675137284" class="social-link whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://github.com/apolo2211" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
                 
-                <div class="footer-col">
-                    <h3>Services</h3>
-                    <ul>
-                        <li><a href="services.html#sites-web">Création de Sites Web</a></li>
-                        <li><a href="services.html#applications">Applications Mobiles</a></li>
-                        <li><a href="services.html#ecommerce">Solutions E-commerce</a></li>
-                        <li><a href="services.html#paiements">Paiements Électroniques</a></li>
-                        <li><a href="services.html">Tous les services</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Entreprise</h3>
-                    <ul>
-                        <li><a href="index.html">Boutique EcoTech</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#tarifs">Tarifs</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="blog.html">Blog Tech</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3>Contact Algérie</h3>
-                    <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Ksar el Boukhari, Médéa, Algérie</li>
-                        <li><i class="fas fa-phone"></i> +213 675 13 72 84</li>
-                        <li><i class="fas fa-envelope"></i> apolo2211@gmail.com</li>
-                        <li><i class="fas fa-clock"></i> Lun - Ven: 8h - 18h</li>
-                    </ul>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#sites-web">Sites Web</a></li>
+                            <li><a href="#applications">Applications Mobile</a></li>
+                            <li><a href="#ecommerce">E-commerce</a></li>
+                            <li><a href="#paiements">Solutions Paiement</a></li>
+                            <li><a href="services.html">Tous les services</a></li>
+                        </ul>
+                    </div>
                     
-                    <div class="payment-badges">
-                        <span class="badge">CIB</span>
-                        <span class="badge">Edahabia</span>
-                        <span class="badge">Djezzy</span>
-                        <span class="badge">Ooredoo</span>
+                    <div class="link-group">
+                        <h4>Entreprise</h4>
+                        <ul>
+                            <li><a href="index.html">Boutique EcoTech</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#tarifs">Tarifs</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="blog.html">Blog Tech</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="contact.html">Centre d'aide</a></li>
+                            <li><a href="contact.html#faq">FAQ</a></li>
+                            <li><a href="contact.html">Support technique</a></li>
+                            <li><a href="contact.html">Maintenance</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Légal</h4>
+                        <ul>
+                            <li><a href="cgu.html">CGU/CGV</a></li>
+                            <li><a href="mentions-legales.html">Mentions légales</a></li>
+                            <li><a href="politique-confidentialite.html">Confidentialité</a></li>
+                            <li><a href="contact.html">Contact légal</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-middle">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong>Siège Social</strong>
+                            <span>Ksar el Boukhari, Médéa, Algérie</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <strong>Téléphone</strong>
+                            <span>+213 675 13 72 84</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <span>apolo2211@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <strong>Horaires</strong>
+                            <span>Lun - Ven: 8h - 18h</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="payment-methods">
+                    <h5>Paiements Acceptés</h5>
+                    <div class="payment-icons">
+                        <i class="fas fa-university" title="Virement bancaire"></i>
+                        <i class="fas fa-money-check-alt" title="Chèque"></i>
+                        <i class="fas fa-hand-holding-usd" title="Espèces"></i>
+                        <i class="fas fa-credit-card" title="Carte"></i>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 EcoTech Solutions. Tous droits réservés.</p>
-                <p>
-                    <a href="mentions-legales.html">Mentions légales</a> | 
-                    <a href="politique-confidentialite.html">Confidentialité</a> | 
-                    <a href="cgu.html">CGU</a>
-                </p>
+                <div class="footer-certifications">
+                    <div class="certification">
+                        <i class="fas fa-lock"></i>
+                        <span>Contrats signés</span>
+                    </div>
+                    <div class="certification">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Confidentialité garantie</span>
+                    </div>
+                    <div class="certification">
+                        <i class="fas fa-certificate"></i>
+                        <span>Qualité professionnelle</span>
+                    </div>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2024 EcoTech Solutions Algérie. Tous droits réservés.</p>
+                    <p class="disclaimer">
+                        <i class="fas fa-code"></i> Développé avec expertise et passion pour l'Algérie
+                    </p>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/213675137284" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Devis WhatsApp</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <!-- Scripts -->
     <script src="js/main.js"></script>
